@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>сказка на ночь</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .round-img {
+	        width: 100%;
+			border-radius: 5%;
+		 
+	    }
+		.sound{
+		    width:300px;
+		}
+	</style>
+	
+</head>
+<body>
+    <div class="container text-center my-5">
+        <div class ="row">
+            <div class="col-lg-4 col-md-8 mx-auto">  
+			    <div class="d-flex justify-content-center mb-3">
+				    
+                    <img class ="round-img" src="обложка.png" >
+					  
+				</div>	
+                <h1>  sweat dreams </h1>
+				<p align= center> sweat dreams </p align = center > 			
+                <audio class= "sound" controls >
+                        <source  src="сказка.mp3" type="audio/mpeg">  
+                        Your browser does not support the audio element. 
+                </audio>
+            </div>
+        </div> 
+    </div>`
+	<script type="text/javascript">
+    (function (l) {
+      if (l.search[1] === "/") {
+        var decoded = l.search
+          .slice(1)
+          .split("&")
+          .map(function (s) {
+            return s.replace(/~and~/g, "&");
+          })
+          .join("?");
+        window.history.replaceState(
+          null,
+          null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    })(window.location);
+  </script>
+</body>
+</html>
